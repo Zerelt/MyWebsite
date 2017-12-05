@@ -2460,6 +2460,52 @@ body,html{
   }
 }
 
+@media(orientation:landscape) and (max-height:600px) {
+  .C_a{
+    .logo-and-name{
+      padding:10px 20px !important;
+      &-inner{
+        display:flex;
+        align-items: center;
+        justify-content: space-around !important;
+        .first-name-svg{
+          margin:10px 0px 5px 0px;
+        }
+        .first-line, .second-line{
+          margin: 5px 0 !important;
+          max-width:300px;
+        }
+      }
+    }
+  }
+}
+
+@media(orientation:landscape) and (max-height:350px) {
+  .C_a{
+    .logo-and-name{
+      padding:10px 20px !important;
+      &-inner{
+        display:flex;
+        align-items: center;
+        justify-content: space-around !important;
+        .font-end-svg{
+          margin-bottom:0 !important;
+        }
+        .ux-ui-svg{
+          margin-top:0 !important;
+        }
+        .first-line, .second-line{
+          margin: 5px 0 !important;
+          max-width:250px;
+          .st0{
+            fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 //================= C_b ======================================
 @media(max-width:769px) {

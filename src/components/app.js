@@ -79,7 +79,13 @@ class App extends React.Component {
     this.handleScroll();
     window.addEventListener('resize', this.handleResize);
     window.addEventListener('resize', this.handleImagesResize);
-    this.setState({eP_container:eP_container_w});
+    /*
+     setState of eP_container after 2 seconds, to get the width after components have mounted;
+     if we just put it without the setTimeout, it returns the initial value of eP_container wich is '',
+     which results in the images not being initially displayed, until a resize event occurs, or until
+     the user presses the arrow buttons
+    */
+    let testWidth = setTimeout(()=>{ this.setState({eP_container:eP_container_w}); }, 2000);
     this.setState({footer_year:f_year});
     let interval_Id = setInterval(this.countPercentagePoints ,10);
     this.setState({interval_Id: interval_Id});
@@ -96,6 +102,7 @@ class App extends React.Component {
   ~~~~~~~~~~~~~~~~~~~~~*/
   componentWillUnmount() {
     window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('resize', this.handleImagesResize);
     clearInterval(this.state.interval_Id);
   }
 
