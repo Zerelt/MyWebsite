@@ -1249,6 +1249,7 @@ body,html{
       width:100%; //specify width or else firefox overwrites border-box to content-box and you get different results
       top:0;
       bottom:0;
+      left:0;right:0;
       margin:auto;
       opacity:0;
       -webkit-transition:opacity 0.1s;
@@ -2800,13 +2801,13 @@ body,html{
       }
       ul{
         img{
-          width:30px !important;
+          width:20px !important; //30
         }
         .css3-logo{
-          width:24px !important;
+          width:14px !important; //24
         }
         .gulp-logo{
-          width:20px !important;
+          width:10px !important; //10
         }
       }
     }

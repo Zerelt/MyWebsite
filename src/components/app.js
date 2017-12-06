@@ -85,7 +85,7 @@ class App extends React.Component {
      which results in the images not being initially displayed, until a resize event occurs, or until
      the user presses the arrow buttons
     */
-    let testWidth = setTimeout(()=>{ this.setState({eP_container:eP_container_w}); }, 2000);
+    let initial_Width = setTimeout(()=>{ this.setState({eP_container:eP_container_w}); }, 2000);
     this.setState({footer_year:f_year});
     let interval_Id = setInterval(this.countPercentagePoints ,10);
     this.setState({interval_Id: interval_Id});
