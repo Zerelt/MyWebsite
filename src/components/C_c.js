@@ -19,8 +19,8 @@ export default class C_c extends Component {
             <p>Have a look at the projects below, click the Live button if you'd like to see the app.
               Note: this site was made with react, hand made Js scrollspy and scroll based animations, sass, webpack 2,
               svg animations, Illustrator and a bit of Photoshop. You can view the source code
-              <a href='https://github.com/Zerelt/MyWebsite_Nov_2017'> here</a>, and all my projects
-              are on <a href='https://www.github.com/zerelt'>Github</a> as well.</p>
+              <a href='https://github.com/Zerelt/MyWebsite_Nov_2017' target='_blank'> here</a>, and all my projects
+              are on <a href='https://www.github.com/zerelt' target='_blank'>Github</a> as well.</p>
           </div>
 
           <div className='project-row'>
