@@ -53,7 +53,7 @@ export default class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://pomodoroapp.netlify.com/' target='_blank'></a>
+                  <a href='https://pomodoro.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://reduxroutertimes.netlify.com/' target='_blank'></a>
+                  <a href='https://redux.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://filterscopy.netlify.com/' target='_blank'></a>
+                  <a href='https://filters.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://datecountdown.netlify.com/' target='_blank'></a>
+                  <a href='https://datecountdown.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://twitchtv.netlify.com/' target='_blank'></a>
+                  <a href='https://twitchtv.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://weatherapp.netlify.com/' target='_blank'></a>
+                  <a href='https://weather.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===1 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://calculatorapp.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://calculator.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Javascript Calculator</p>
                       <p className='extra-project-info-description'>Javascript calculator with 2 displays, one returning the current operation and result and the other all your operations.</p>
                       <span className='extra-projects-info-tools'>
@@ -251,7 +251,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===2 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://alexanderv1.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://oldsite.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Old personal website</p>
                       <p className='extra-project-info-description'>Previous version of my portfolio website. Uses made with react, react-motion, sass, webpack, and Illustrator for the backgrounds and prototype design.</p>
                       <span className='extra-projects-info-tools'>
@@ -267,7 +267,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===3 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://b3landingpage.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://bootstrap1.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Bootstrap 3 app landing page</p>
                       <p className='extra-project-info-description'>One of my very first projects. A simple landing page for general app using bootstrap 3.</p>
                       <span className='extra-projects-info-tools'>
@@ -283,7 +283,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===4 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://b3landingpage2.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://bootstrap2.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>bootstrap 3 page</p>
                       <p className='extra-project-info-description'>Another of my very first projects. A simple landing page for general app using bootstrap 3.</p>
                       <span className='extra-projects-info-tools'>
@@ -299,7 +299,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===5 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://reactclock.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://reactclock.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>React clock</p>
                       <p className='extra-project-info-description'>React app that shows the current date and time, with changing backgrounds depending if it's morning afternoon evening or night.</p>
                       <span className='extra-projects-info-tools'>
@@ -314,7 +314,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===6 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://wikipediaapp.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://wikipedia.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Wikipedia app</p>
                       <p className='extra-project-info-description'>App using the Wikiepdia API that returns 10 Wikipedia articles matching your input as you type, and a button that returns a random article.</p>
                       <span className='extra-projects-info-tools'>
@@ -330,7 +330,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===7 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://tictactoeapp.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://tictactoe.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Tic tac toe game</p>
                       <p className='extra-project-info-description'>Chose your sign and start playing a game of tic tac toe against an easy AI.</p>
                       <span className='extra-projects-info-tools'>
@@ -345,7 +345,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===8 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://simongameapp.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://simongame.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Simon game</p>
                       <p className='extra-project-info-description'> A JS replica of the Simon Game. Flip the switch to power on and then press the red button to start. For a bigger challange press the yellow button; this makes it so it starts a new sequence from 0 at every mistake. Match 20 sequences to win.</p>
                       <span className='extra-projects-info-tools'>
@@ -360,7 +360,7 @@ export default class C_c extends Component {
                 <div className={'extra-projects-shadow ' + (this.props.displayedProject===9 ? 'currently-displayed-project' : "") }>
                   <div className='extra-projects-info-container'>
                     <span className='extra-projects-info'>
-                      <p className='extra-project-info-Go'><a href='https://mathgame.netlify.com/' target='_blank'>Go</a></p>
+                      <p className='extra-project-info-Go'><a href='https://mathgame.alexandercoding.com' target='_blank'>Go</a></p>
                       <p className='extra-project-info-title'>Math game</p>
                       <p className='extra-project-info-description'>Elementary math game for kids where the users have 1 minute to get as many answers right as they can. Restart the game after 1 min to try to get a better score.</p>
                       <span className='extra-projects-info-tools'>
