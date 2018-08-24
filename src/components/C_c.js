@@ -1,7 +1,8 @@
 import React , {Component} from 'react';
-import {Scrollbars} from 'react-custom-scrollbars';
+import { hot } from 'react-hot-loader';
+import Circle from './circle.js';
 
-export default class C_c extends Component {
+class C_c extends Component {
   render() {
 
     let images_width = this.props.asd.width < 769 ? (this.props.asd.eP_container-250)/2 : this.props.asd.eP_container/3;
@@ -24,20 +25,18 @@ export default class C_c extends Component {
           </div>
 
           <div className='project-row'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.5 295.5" className='circles-bg' id='circles-bg-one'>
-              {/* <!-- outermost black --> */}
-              <path id="XMLID_26_" d="M12.4 101.4S23.5 56 71.7 26.9C129.6-8.2 183.4 5.7 183.4 5.7" className="st0"/>
-              {/* <!-- black outline   --> */}
-              <path id="XMLID_24_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st2"/>
-              {/* <!-- orange line inside black one    --> */}
-              <path id="XMLID_23_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st1"/>
-              {/* <!-- inner most orange   --> */}
-              <path id="XMLID_25_" d="M227 105.1c-13.8-27-43.3-45.2-77.6-45.2-47.4 0-85.9 35.6-85.9 79.5s38.5 79.5 85.9 79.5c4.5 0 8.8-.3 13.1-.9" className="st5"/>
-              {/* <!-- inner most black    --> */}
-              <path id="XMLID_22_" d="M57.4 189.6s38.3 61.2 111 46.7 79.6-64.1 79.6-64.1" className="st3"/>
-              {/* <!-- outer most orange    --> */}
-              <path id="XMLID_21_" d="M310 175.1s-22.5 83.8-121 111.5C63.5 322 1.5 218.8 1.5 218.8" className="st4"/>
-            </svg>
+            <Circle secondID={this.props.circle_data[0].secondID} 
+            gradientIdOne={this.props.circle_data[0].gradientIdOne} 
+            gradientIdTwo={this.props.circle_data[0].gradientIdTwo} 
+            strokeUrlOne={this.props.circle_data[0].strokeUrlOne}
+            strokeUrlTwo={this.props.circle_data[0].strokeUrlTwo}
+            colorOne={this.props.circle_data[0].colorOne}
+            colorTwo={this.props.circle_data[0].colorTwo}
+            colorThree={this.props.circle_data[0].colorThree}
+            colorFour={this.props.circle_data[0].colorFour}
+            colorFive={this.props.circle_data[0].colorFive}
+            colorSix={this.props.circle_data[0].colorSix}
+            colorCenter={this.props.circle_data[0].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
                 <p>Pomodoro App</p>
@@ -61,14 +60,18 @@ export default class C_c extends Component {
           </div>
 
           <div className='project-row'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.5 295.5" className='circles-bg' id='circles-bg-two'>
-              <path id="XMLID_26_" d="M12.4 101.4S23.5 56 71.7 26.9C129.6-8.2 183.4 5.7 183.4 5.7" className="st0"/>
-              <path id="XMLID_24_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st2"/>
-              <path id="XMLID_23_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st1"/>
-              <path id="XMLID_25_" d="M227 105.1c-13.8-27-43.3-45.2-77.6-45.2-47.4 0-85.9 35.6-85.9 79.5s38.5 79.5 85.9 79.5c4.5 0 8.8-.3 13.1-.9" className="st5"/>
-              <path id="XMLID_22_" d="M57.4 189.6s38.3 61.2 111 46.7 79.6-64.1 79.6-64.1" className="st3"/>
-              <path id="XMLID_21_" d="M310 175.1s-22.5 83.8-121 111.5C63.5 322 1.5 218.8 1.5 218.8" className="st4"/>
-            </svg>
+          <Circle secondID={this.props.circle_data[1].secondID} 
+            gradientIdOne={this.props.circle_data[1].gradientIdOne} 
+            gradientIdTwo={this.props.circle_data[1].gradientIdTwo} 
+            strokeUrlOne={this.props.circle_data[1].strokeUrlOne}
+            strokeUrlTwo={this.props.circle_data[1].strokeUrlTwo}
+            colorOne={this.props.circle_data[1].colorOne}
+            colorTwo={this.props.circle_data[1].colorTwo}
+            colorThree={this.props.circle_data[1].colorThree}
+            colorFour={this.props.circle_data[1].colorFour}
+            colorFive={this.props.circle_data[1].colorFive}
+            colorSix={this.props.circle_data[1].colorSix}
+            colorCenter={this.props.circle_data[1].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
                 <p>Redux times</p>
@@ -94,14 +97,18 @@ export default class C_c extends Component {
           </div>
 
           <div className='project-row'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.5 295.5" className='circles-bg' id='circles-bg-three'>
-              <path id="XMLID_26_" d="M12.4 101.4S23.5 56 71.7 26.9C129.6-8.2 183.4 5.7 183.4 5.7" className="st0"/>
-              <path id="XMLID_24_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st2"/>
-              <path id="XMLID_23_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st1"/>
-              <path id="XMLID_25_" d="M227 105.1c-13.8-27-43.3-45.2-77.6-45.2-47.4 0-85.9 35.6-85.9 79.5s38.5 79.5 85.9 79.5c4.5 0 8.8-.3 13.1-.9" className="st5"/>
-              <path id="XMLID_22_" d="M57.4 189.6s38.3 61.2 111 46.7 79.6-64.1 79.6-64.1" className="st3"/>
-              <path id="XMLID_21_" d="M310 175.1s-22.5 83.8-121 111.5C63.5 322 1.5 218.8 1.5 218.8" className="st4"/>
-            </svg>
+          <Circle secondID={this.props.circle_data[2].secondID} 
+            gradientIdOne={this.props.circle_data[2].gradientIdOne} 
+            gradientIdTwo={this.props.circle_data[2].gradientIdTwo} 
+            strokeUrlOne={this.props.circle_data[2].strokeUrlOne}
+            strokeUrlTwo={this.props.circle_data[2].strokeUrlTwo}
+            colorOne={this.props.circle_data[2].colorOne}
+            colorTwo={this.props.circle_data[2].colorTwo}
+            colorThree={this.props.circle_data[2].colorThree}
+            colorFour={this.props.circle_data[2].colorFour}
+            colorFive={this.props.circle_data[2].colorFive}
+            colorSix={this.props.circle_data[2].colorSix}
+            colorCenter={this.props.circle_data[2].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
                 <p>Filters copy</p>
@@ -125,14 +132,18 @@ export default class C_c extends Component {
           </div>
 
           <div className='project-row'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.5 295.5" className='circles-bg' id='circles-bg-four'>
-              <path id="XMLID_26_" d="M12.4 101.4S23.5 56 71.7 26.9C129.6-8.2 183.4 5.7 183.4 5.7" className="st0"/>
-              <path id="XMLID_24_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st2"/>
-              <path id="XMLID_23_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st1"/>
-              <path id="XMLID_25_" d="M227 105.1c-13.8-27-43.3-45.2-77.6-45.2-47.4 0-85.9 35.6-85.9 79.5s38.5 79.5 85.9 79.5c4.5 0 8.8-.3 13.1-.9" className="st5"/>
-              <path id="XMLID_22_" d="M57.4 189.6s38.3 61.2 111 46.7 79.6-64.1 79.6-64.1" className="st3"/>
-              <path id="XMLID_21_" d="M310 175.1s-22.5 83.8-121 111.5C63.5 322 1.5 218.8 1.5 218.8" className="st4"/>
-            </svg>
+          <Circle secondID={this.props.circle_data[3].secondID} 
+            gradientIdOne={this.props.circle_data[3].gradientIdOne} 
+            gradientIdTwo={this.props.circle_data[3].gradientIdTwo} 
+            strokeUrlOne={this.props.circle_data[3].strokeUrlOne}
+            strokeUrlTwo={this.props.circle_data[3].strokeUrlTwo}
+            colorOne={this.props.circle_data[3].colorOne}
+            colorTwo={this.props.circle_data[3].colorTwo}
+            colorThree={this.props.circle_data[3].colorThree}
+            colorFour={this.props.circle_data[3].colorFour}
+            colorFive={this.props.circle_data[3].colorFive}
+            colorSix={this.props.circle_data[3].colorSix}
+            colorCenter={this.props.circle_data[3].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
                 <p>Date counter</p>
@@ -157,14 +168,18 @@ export default class C_c extends Component {
           </div>
 
           <div className='project-row'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.5 295.5" className='circles-bg' id='circles-bg-five'>
-              <path id="XMLID_26_" d="M12.4 101.4S23.5 56 71.7 26.9C129.6-8.2 183.4 5.7 183.4 5.7" className="st0"/>
-              <path id="XMLID_24_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st2"/>
-              <path id="XMLID_23_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st1"/>
-              <path id="XMLID_25_" d="M227 105.1c-13.8-27-43.3-45.2-77.6-45.2-47.4 0-85.9 35.6-85.9 79.5s38.5 79.5 85.9 79.5c4.5 0 8.8-.3 13.1-.9" className="st5"/>
-              <path id="XMLID_22_" d="M57.4 189.6s38.3 61.2 111 46.7 79.6-64.1 79.6-64.1" className="st3"/>
-              <path id="XMLID_21_" d="M310 175.1s-22.5 83.8-121 111.5C63.5 322 1.5 218.8 1.5 218.8" className="st4"/>
-            </svg>
+          <Circle secondID={this.props.circle_data[4].secondID} 
+            gradientIdOne={this.props.circle_data[4].gradientIdOne} 
+            gradientIdTwo={this.props.circle_data[4].gradientIdTwo} 
+            strokeUrlOne={this.props.circle_data[4].strokeUrlOne}
+            strokeUrlTwo={this.props.circle_data[4].strokeUrlTwo}
+            colorOne={this.props.circle_data[4].colorOne}
+            colorTwo={this.props.circle_data[4].colorTwo}
+            colorThree={this.props.circle_data[4].colorThree}
+            colorFour={this.props.circle_data[4].colorFour}
+            colorFive={this.props.circle_data[4].colorFive}
+            colorSix={this.props.circle_data[4].colorSix}
+            colorCenter={this.props.circle_data[4].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
                 <p>TwitchTV App</p>
@@ -189,14 +204,18 @@ export default class C_c extends Component {
           </div>
 
           <div className='project-row'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.5 295.5" className='circles-bg' id='circles-bg-six'>
-              <path id="XMLID_26_" d="M12.4 101.4S23.5 56 71.7 26.9C129.6-8.2 183.4 5.7 183.4 5.7" className="st0"/>
-              <path id="XMLID_24_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st2"/>
-              <path id="XMLID_23_" d="M257.5 102.1c-15.5-38-53.1-65.9-99.2-69.7C94.5 27 38.8 70.8 33.9 129.9s42.7 111.5 106.4 116.8" className="st1"/>
-              <path id="XMLID_25_" d="M227 105.1c-13.8-27-43.3-45.2-77.6-45.2-47.4 0-85.9 35.6-85.9 79.5s38.5 79.5 85.9 79.5c4.5 0 8.8-.3 13.1-.9" className="st5"/>
-              <path id="XMLID_22_" d="M57.4 189.6s38.3 61.2 111 46.7 79.6-64.1 79.6-64.1" className="st3"/>
-              <path id="XMLID_21_" d="M310 175.1s-22.5 83.8-121 111.5C63.5 322 1.5 218.8 1.5 218.8" className="st4"/>
-            </svg>
+          <Circle secondID={this.props.circle_data[5].secondID} 
+            gradientIdOne={this.props.circle_data[5].gradientIdOne} 
+            gradientIdTwo={this.props.circle_data[5].gradientIdTwo} 
+            strokeUrlOne={this.props.circle_data[5].strokeUrlOne}
+            strokeUrlTwo={this.props.circle_data[5].strokeUrlTwo}
+            colorOne={this.props.circle_data[5].colorOne}
+            colorTwo={this.props.circle_data[5].colorTwo}
+            colorThree={this.props.circle_data[5].colorThree}
+            colorFour={this.props.circle_data[5].colorFour}
+            colorFive={this.props.circle_data[5].colorFive}
+            colorSix={this.props.circle_data[5].colorSix}
+            colorCenter={this.props.circle_data[5].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
                 <p>Weather App</p>
@@ -223,9 +242,10 @@ export default class C_c extends Component {
 
           <div className={this.props.asd.titleClassName_Extras}>
             <h1><span className='span-container'><span className='span-text'>EXTRAs</span></span></h1>
-            <p>Need more ? Then scroll below , hover over the image to have a better look and if
-            something catches your eye click on the bottom icon for a brief description and
-            a link to the live project.</p>
+            <p>If you're interested in seeing some of my older demo projects, or if you're curious what else I've 
+              worked with, then scroll below , have a look and if something catches your eye hover over the image
+              for a brief description and a link to 
+              the live project.</p>
           </div>
 
           <div className='extra-projects-btn-wrapper'>
@@ -393,3 +413,5 @@ export default class C_c extends Component {
     )
   }
 }
+
+export default hot(module)(C_c);

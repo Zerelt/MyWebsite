@@ -511,7 +511,7 @@ class App extends React.Component {
         titleName.children[0].style.opacity='1';
         titleName.children[0].style.WebkitAnimationName = "bounce";  // Code for Chrome, Safari, and Opera
         titleName.children[0].style.animationName = "bounce";   // Standard syntax
-        setTimeout(()=>{ titleName.children[1].style.transform='translateY(0)'; titleName.children[1].style.opacity='1'; } , 2500);
+        setTimeout(()=>{ titleName.children[1].style.transform='translateY(0)'; titleName.children[1].style.opacity='1'; } , 2500); // the p tag
 
         if(titleName===c_Title_Work) {
           setTimeout( function(){this.setState({  titleClassName_Work : 'projects-intro'});}.bind(this) , 1100  );
@@ -542,6 +542,7 @@ class App extends React.Component {
   handleArrowClickRight(){
     this.state.displayedProject < 9 ? this.setState({displayedProject:this.state.displayedProject+1}) : this.setState({displayedProject:9});
   }
+  
   /*~~~~~~~~~~~~~~~~~~~~~~~~~
     keep values for input and textarea in state and if
     they are not empty apply styling classes to them in C_d
@@ -586,6 +587,7 @@ class App extends React.Component {
             handleAbout={this.handleAbout}/>
           <C_c ref={(c) => {this.c = c;}}
             asd={asd}
+            circle_data={this.props.circle_data}
             displayedProject={this.state.displayedProject}
             handleArrowClickLeft={this.handleArrowClickLeft}
             handleArrowClickRight={this.handleArrowClickRight}
@@ -606,4 +608,24 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App/>,document.getElementById('app'));
+const CIRCLE_DATA=[
+  {secondID:'circles-bg-one', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
+  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
+
+  {secondID:'circles-bg-two', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
+  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
+
+  {secondID:'circles-bg-three', gradientIdOne:'magenta-inside-black', gradientIdTwo:'outer-most-magenta', strokeUrlOne:'url(#magenta-inside-black)', strokeUrlTwo:'url(#outer-most-magenta)', 
+  colorOne:"#C600A1", colorTwo:"#D8198B", colorThree:"#D80F7D", colorFour:"#F50C81", colorFive:"#FF0D87", colorSix:"#FF1796", colorCenter:"#D90972"},
+
+  {secondID:'circles-bg-four', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
+  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
+
+  {secondID:'circles-bg-five', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
+  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
+
+  {secondID:'circles-bg-six', gradientIdOne:'magenta-inside-black', gradientIdTwo:'outer-most-magenta', strokeUrlOne:'url(#magenta-inside-black)', strokeUrlTwo:'url(#outer-most-magenta)', 
+  colorOne:"#C600A1", colorTwo:"#D8198B", colorThree:"#D80F7D", colorFour:"#F50C81", colorFive:"#FF0D87", colorSix:"#FF1796", colorCenter:"#D90972"}
+];
+
+ReactDOM.render(<App circle_data={CIRCLE_DATA}/>,document.getElementById('app'));

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import { hot } from 'react-hot-loader';
 
-export default class Footer extends Component {
+class Footer extends Component {
   render() {
     return (
       <div className='footer'>
@@ -9,3 +10,5 @@ export default class Footer extends Component {
     )
   }
 }
+
+export default hot(module)(Footer);

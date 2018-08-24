@@ -45,17 +45,6 @@ module.exports = {
         use: 'file-loader?name=fonts/[name].[ext]&outputPath=style/&publicPath=./'
       }
     ]
-  },//end module
-
-  devServer:{
-    contentBase:path.join(__dirname,'dist'),
-    // publicPath:'./',
-    compress:true,
-    // port:8080,
-    // stats: 'errors-only',
-    hot: false,
-    // hotOnly: true
-    // open:true
   },
 
   plugins: [
@@ -65,15 +54,13 @@ module.exports = {
         collapseWhitespace:true
       },
       hash: true,
-      // filename:'./../index.html',
-      // excludeChunks:['contact'],
       template: './src/index.ejs',
-      // favicon: 'path/to/favicon.png'
+      favicon: './src/images/favicon.png'
     }),
     new ExtractTextPlugin({
       filename:'app.css',
       disable:false,
       allChunks:true
     }),
-  ]//end plugins
+  ]
 };
