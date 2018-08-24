@@ -36,13 +36,13 @@ module.exports = {
         test:/\.(jpe?g|png|svg|gif)$/i,
         exclude:/node_modules/,
         use:[
-          'file-loader?name=[name].[ext]&outputPath=images/&publicPath=./',
+          'file-loader?name=[name].[ext]&outputPath=./&publicPath=./',
           'image-webpack-loader'
         ]
       },
       {
         test: /\.(ttf|woff|eot)$/,
-        use: 'file-loader?name=fonts/[name].[ext]&outputPath=style/&publicPath=./'
+        use: 'file-loader?name=fonts/[name].[ext]&outputPath=./&publicPath=./'
       }
     ]
   },
