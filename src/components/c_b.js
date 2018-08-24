@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import { hot } from 'react-hot-loader';
 
-export default class C_b extends Component {
+class C_b extends Component {
   render() {
     return (
       <div className='C_b'>
@@ -210,3 +211,6 @@ export default class C_b extends Component {
     )
   }
 }
+
+
+export default hot(module)(C_b);

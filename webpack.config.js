@@ -3,24 +3,14 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
-/*
-to check where the webpack is serving the file:
-You can see it:  http://localhost:8080/webpack-dev-server
-Then I could see my bundle.js path > http://localhost:8080/dist/bundle.js
-After that I used that /dist/bundle.js in my index.html <script src="/dist/bundle.js"></script>
-Now it refreshes any file changes.
-
-https://stackoverflow.com/questions/36150456/webpack-dev-server-not-bundling-even-after-showing-bundle-valid-message
-*/
-
 module.exports = {
   entry: {
     app:'./src/components/app.js'
   },
-
   output: {
     path: path.resolve(__dirname,'dist'),
     // publicPath:'http://localhost:8080/',
+    publicPath:'/',
     filename: '[name].bundle.js',
   },
 
@@ -42,7 +32,7 @@ module.exports = {
         test:/\.(jpe?g|png|svg|gif)$/i,
         exclude:/node_modules/,
         use:[
-          'file-loader?name=[name].[ext]&outputPath=images/&publicPath=/',
+          'file-loader?name=[name].[ext]&outputPath=./&publicPath=./',
           'image-webpack-loader'
         ]
       },
@@ -51,41 +41,33 @@ module.exports = {
         use: 'file-loader?name=fonts/[name].[ext]'
       }
     ]
-  },//end module
+  },
 
   devServer:{
     contentBase:path.join(__dirname,'dist'),
-    // publicPath:'/dist/',
-    // publicPath: 'http://localhost:8080/dist',
+    publicPath:'/',
+    // publicPath: 'http://localhost:8080',
     compress:true,
-    // port:8080,
     inline:true,
-    // stats: 'errors-only',
-    hot: true,
-    // hotOnly: true
-    // open:true
+    hot: true
   },
 
   plugins: [
     new HtmlWebpackPlugin({
       title:'My custom project title',
       minify: {
-        // collapseWhitespace:true
+        collapseWhitespace:true
       },
       hash: true,
-      // filename:'./../index.html',
-      // excludeChunks:['contact'],
       template: './src/index.ejs',
-      // favicon: 'path/to/favicon.png'
+      favicon: './src/images/favicon.png'
     }),
     new ExtractTextPlugin({
       filename:'app.css',
       disable:true,
       allChunks:true
     }),
-    new webpack.HotModuleReplacementPlugin({
-      // isProd:false //specify is development environment is development or production
-    }),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-  ]//end plugins
+  ]
 };

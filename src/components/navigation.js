@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
+import { hot } from 'react-hot-loader';
 
-
-export default class Navigation extends Component {
+class Navigation extends Component {
   render() {
 
     let a = this.props.asd.first;
@@ -30,7 +30,7 @@ export default class Navigation extends Component {
           >
         </span>
         <span
-          className={(d.top < (h-h/3) && d.top>=0) ? 'span_selected' : '' }
+          className={(d.top < (h-h/3)) ? 'span_selected' : '' } //(d.top < (h-h/3) && d.top>=0)
           onClick={()=>this.props.handleNavClick(4)}
           >
         </span>
@@ -38,3 +38,5 @@ export default class Navigation extends Component {
     )
   }
 }
+
+export default hot(module)(Navigation);

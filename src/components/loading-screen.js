@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import { hot } from 'react-hot-loader';
 
-export default class LoadingScreen extends Component{
+class LoadingScreen extends Component{
   render() {
     return(
       <div className={'loading-screen ' + (this.props.asd.display_Percentage===100 ? 'loading-screen-after' : '')}>
@@ -14,3 +15,5 @@ export default class LoadingScreen extends Component{
     )
   }
 }
+
+export default hot(module)(LoadingScreen)
