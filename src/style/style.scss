@@ -426,7 +426,8 @@ body,html{
           stroke-dasharray: 100;
           stroke-dashoffset: 101; //leave one point more so dots don't appear where the strokes start in Firefox
           animation-name:frontend_outline;
-          animation-duration: .38s; //was 0.35, with 0.38 looks a bit smoother
+          -webkit-animation-duration: .19s;
+          animation-duration: .19s; //was 0.35, with 0.38 looks a bit smoother; down to .2
           animation-fill-mode:forwards;
           -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
           animation-timing-function: ease-in-out;
@@ -510,8 +511,8 @@ body,html{
           stroke-dasharray: 100;
           stroke-dashoffset: 101; //leave one point more so dots don't appear where the strokes start in Firefox
           // animation-name:ux_ui_outline;
-          -webkit-animation-duration: .35s;
-                  animation-duration: .35s;
+          -webkit-animation-duration: .19s;//.35
+                  animation-duration: .19s;
           -webkit-animation-fill-mode:forwards;
                   animation-fill-mode:forwards;
           -webkit-animation-timing-function: ease-in-out; /* Safari 4.0 - 8.0 */
@@ -880,9 +881,13 @@ body,html{
       transition:transform 0.24s, -webkit-transform 0.24s;
     }
     p{
-      font-family:'Krb-regular';
-      font-size:18px;
+      max-width:1000px;
+      margin-left:auto;
+      margin-right:auto;
       padding:50px 20px;
+      font-family:'Krb-regular';
+      font-size:17px;
+      color:#211f21;
       opacity:0;
        -webkit-transition:opacity 0.4s ease-in;
       transition:opacity 0.4s ease-in;
@@ -962,7 +967,7 @@ body,html{
     overflow: hidden;
     .projects-intro{
       padding-top:50px;
-      height:550px;
+      min-height:550px;
       margin-top:20vh;
       h1{
         display:-webkit-box;
@@ -1038,11 +1043,15 @@ body,html{
         }
       }
       p{
+        max-width:1000px;
+        margin-left:auto;
+        margin-right:auto;
         margin-top:80px;
+        padding:0 20px;
         font-family:'Krb-regular';
-        font-size:18px;
-        color:#212020;
-        line-height:1.8;
+        font-size:17px;
+        color:#211f21;
+        line-height:1.6;
         letter-spacing: 0.3px;
         -webkit-transform:translateY(-20px);
                 transform:translateY(-20px);
@@ -1065,8 +1074,8 @@ body,html{
         .ending{ //used only in Contacts
           display:block;
           font-family:'Krb-regular';
-          font-size:18px;
-          color:#212020;
+          font-size:17px;
+          color:#211f21;
           margin:20px 0 200px 0;
           text-align:center;
         }
@@ -1074,7 +1083,7 @@ body,html{
     }
     .projects-intro-initial{
       padding-top:50px;
-      height:550px;
+      min-height:550px;
       margin-top:20vh;
       h1{
         display:-webkit-box;
@@ -1129,10 +1138,11 @@ body,html{
       }
       p{
         margin-top:80px;
+        padding:0 20px;
         font-family:'Krb-regular';
-        font-size:18px;
-        color:#212020;
-        line-height:1.8;
+        font-size:17px;
+        color:#211f21;
+        line-height:1.6;
         letter-spacing: 0.3px;
         -webkit-transform:translateY(-20px);
                 transform:translateY(-20px);
@@ -1266,8 +1276,10 @@ body,html{
       padding:20px;
       .project-description-text{
         font-family:'krb-regular';
-        line-height:1.4;
-        color:#211f1f;
+        font-size:17px;
+        line-height:1.2;
+        letter-spacing:-0.3px;
+        color:rgba(33,31,33,0.85);
         padding:18px;
         padding-top:0px;
         max-width:650px;
@@ -1380,8 +1392,6 @@ body,html{
       .project-description{
         float:right;
         position:relative;
-        -webkit-box-shadow:0px 6px 14px -7px rgba(0, 0, 0, 0.1);
-                box-shadow:0px 6px 14px -7px rgba(0, 0, 0, 0.1);
         .project-description-text{
           padding-right:40px;
           -webkit-transform:translateX(-20px);
@@ -1396,7 +1406,7 @@ body,html{
           right:0;
           height:80px; //100px
           width:250px; //300px
-          background-color:#211f1f;
+          background-color:#D90972;
           -webkit-box-shadow:2px 2px 2px rgba(0, 0, 0, 0.1);
                   box-shadow:2px 2px 2px rgba(0, 0, 0, 0.1);
           cursor:pointer;
@@ -1424,7 +1434,7 @@ body,html{
             bottom:-2px;left:-2px;
             margin:auto;
             border-radius:50% !important;
-            background-color:#15ffd2;
+            background-color:#D90972 + 40;
             z-index:2;
             -webkit-transition:opacity 0s, -webkit-transform 0.24s;
             transition:opacity 0s, -webkit-transform 0.24s;
@@ -1490,8 +1500,6 @@ body,html{
       .project-description{
         position:relative;
         float:left;
-        -webkit-box-shadow:0px 6px 14px -7px rgba(0, 0, 0, 0.1);
-                box-shadow:0px 6px 14px -7px rgba(0, 0, 0, 0.1);
         .project-description-text{
           padding-left:40px;
           -webkit-transform:translateX(20px);
@@ -1508,7 +1516,7 @@ body,html{
           width:250px; //300
           -webkit-box-shadow:-2px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow:-2px 2px 2px rgba(0, 0, 0, 0.12);
-          background-color:#211f1f;
+          background-color:#EF5830;
           cursor:pointer;
           -webkit-transform:translateX(20px);
                   transform:translateX(20px);
@@ -1534,7 +1542,7 @@ body,html{
             bottom:-2px;right:-2px;
             margin:auto;
             border-radius:50% !important;
-            background-color:#15ffd2;
+            background-color:#EF5830 + 20;
             z-index:2;
             -webkit-transition:opacity 0s, -webkit-transform 0.24s;
             transition:opacity 0s, -webkit-transform 0.24s;
@@ -2576,7 +2584,6 @@ body,html{
         .project-description{
           height:55vh;
           &-text{
-            font-size:19px;
             line-height:1.2;
           }
           ul{
@@ -2794,10 +2801,6 @@ body,html{
           }
         }
       }
-      p, .ending{
-        font-size:17px !important;
-        line-height:1.6 !important;
-      }
     }
     .project-row{
       padding:0;
@@ -2865,7 +2868,6 @@ body,html{
           height:40%;
           width:100%;
           &-text{
-            font-size:18px;
             line-height:1.2;
             padding:0 !important;
           }
@@ -2925,7 +2927,7 @@ body,html{
               transition:background-color 0.24s;
             }
             &:hover{
-              background-color:#2ecc71;
+              background-color:#D90972 + 40;
             }
           }
         }
@@ -2957,7 +2959,7 @@ body,html{
               transition:background-color 0.24s;
             }
             &:hover{
-              background-color:#2ecc71;
+              background-color:#EF5830 + 20;
             }
           }
         }
@@ -2977,10 +2979,6 @@ body,html{
             font-size:30px !important;
           }
         }
-      }
-      p, .ending{
-        font-size:17px !important;
-        line-height:1.6 !important;
       }
     }
   }
@@ -3034,10 +3032,6 @@ body,html{
             font-size:30px !important;
           }
         }
-      }
-      p, .ending{
-        font-size:17px !important;
-        line-height:1.6 !important;
       }
     }
 
@@ -3096,10 +3090,6 @@ body,html{
     .projects-intro{
       p{
         margin-top:65px !important;
-      }
-      p, .ending{
-        font-size:17px !important;
-        line-height:1.6 !important;
       }
     }
     .project-row{
@@ -3167,7 +3157,6 @@ body,html{
           height:40%;
           width:100%;
           &-text{
-            font-size:17px;
             line-height:1.2;
             padding:0 !important;
           }
@@ -3231,7 +3220,7 @@ body,html{
               transition:background-color 0.24s;
             }
             &:hover{
-              background-color:#2ecc71;
+              background-color:#d90972 + 40;
             }
           }
         }
@@ -3263,7 +3252,7 @@ body,html{
               transition:background-color 0.24s;
             }
             &:hover{
-              background-color:#2ecc71;
+              background-color:#EF5830 + 20;
             }
           }
         }
@@ -3278,10 +3267,6 @@ body,html{
     .projects-intro{
       p{
         margin-top:65px !important;
-      }
-      p, .ending{
-        font-size:17px !important;
-        line-height:1.6 !important;
       }
     }
     .project{

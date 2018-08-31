@@ -114,6 +114,31 @@ class App extends React.Component {
       height:window.innerHeight,
       width:window.innerWidth
     });
+    //so the ul with the tools svg is handled automatically 
+    //and doesn't appear only after you scroll after a resize over/below 655px 
+    //pulled from the handleProjectsBg function but ok for a quick fix
+
+    let c_BG_one = ReactDOM.findDOMNode(this.c).children[0].children[1]; // first .project-row
+    let c_BG_two = ReactDOM.findDOMNode(this.c).children[0].children[2]; // second .project-row
+    let c_BG_three = ReactDOM.findDOMNode(this.c).children[0].children[3]; // third .project-row
+    let c_BG_four = ReactDOM.findDOMNode(this.c).children[0].children[4]; // fourth .project-row
+    let c_BG_five = ReactDOM.findDOMNode(this.c).children[0].children[5]; // fifth .project-row
+    let c_BG_six = ReactDOM.findDOMNode(this.c).children[0].children[6]; // sixth .project-row
+    if (this.state.width<=655) {
+      c_BG_one.children[1].children[1].children[1].style.opacity='1';
+      c_BG_two.children[1].children[1].children[1].style.opacity='1'; 
+      c_BG_three.children[1].children[1].children[1].style.opacity='1';
+      c_BG_four.children[1].children[1].children[1].style.opacity='1'; 
+      c_BG_five.children[1].children[1].children[1].style.opacity='1';
+      c_BG_six.children[1].children[1].children[1].style.opacity='1';
+    } else {
+      c_BG_one.children[1].children[1].children[1].style.opacity='0';
+      c_BG_two.children[1].children[1].children[1].style.opacity='0';
+      c_BG_three.children[1].children[1].children[1].style.opacity='0';
+      c_BG_four.children[1].children[1].children[1].style.opacity='0';
+      c_BG_five.children[1].children[1].children[1].style.opacity='0';
+      c_BG_six.children[1].children[1].children[1].style.opacity='0';
+    }
   }
 
   /*~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -474,7 +499,7 @@ class App extends React.Component {
         row_Number.children[1].children[1].children[0].style.opacity='1';
         row_Number.children[1].children[1].children[0].style.transform='translateX(0px)';
         //tools used --- the <ul> with the small svg icons
-        row_Number.children[1].children[1].children[1].style.opacity='1';
+        row_Number.children[1].children[1].children[1].style.opacity= (this.state.width<=655 ? '1' : '0');
         row_Number.children[1].children[1].children[1].style.transform='translateX(0px)';
         //go Live button
         row_Number.children[1].children[1].children[2].style.opacity='1';
@@ -609,8 +634,8 @@ class App extends React.Component {
 }
 
 const CIRCLE_DATA=[
-  {secondID:'circles-bg-one', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
-  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
+  {secondID:'circles-bg-one', gradientIdOne:'purple-inside-black', gradientIdTwo:'outer-most-purple', strokeUrlOne:'url(#purple-inside-black)', strokeUrlTwo:'url(#outer-most-purple)', 
+  colorOne:"#7E009C", colorTwo:"#9F00C0", colorThree:"#D80F7D", colorFour:"#F50C81", colorFive:"#FF0D87", colorSix:"#FF1796", colorCenter:"#D90972"},
 
   {secondID:'circles-bg-two', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
   colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
@@ -621,11 +646,11 @@ const CIRCLE_DATA=[
   {secondID:'circles-bg-four', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
   colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
 
-  {secondID:'circles-bg-five', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
-  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"},
+  {secondID:'circles-bg-five', gradientIdOne:'magenta-inside-black', gradientIdTwo:'outer-most-magenta', strokeUrlOne:'url(#magenta-inside-black)', strokeUrlTwo:'url(#outer-most-magenta)', 
+  colorOne:"#C600A1", colorTwo:"#D8198B", colorThree:"#D80F7D", colorFour:"#F50C81", colorFive:"#FF0D87", colorSix:"#FF1796", colorCenter:"#D90972"},
 
-  {secondID:'circles-bg-six', gradientIdOne:'magenta-inside-black', gradientIdTwo:'outer-most-magenta', strokeUrlOne:'url(#magenta-inside-black)', strokeUrlTwo:'url(#outer-most-magenta)', 
-  colorOne:"#C600A1", colorTwo:"#D8198B", colorThree:"#D80F7D", colorFour:"#F50C81", colorFive:"#FF0D87", colorSix:"#FF1796", colorCenter:"#D90972"}
+  {secondID:'circles-bg-six', gradientIdOne:'orange-inside-black', gradientIdTwo:'outer-most-orange', strokeUrlOne:'url(#orange-inside-black)', strokeUrlTwo:'url(#outer-most-orange)', 
+  colorOne:"#EF5830", colorTwo:"#EF5A30", colorThree:"#F39739", colorFour:"#F6C43F", colorFive:"#F8E043", colorSix:"#F9EA44", colorCenter:"#EF5830"}
 ];
 
 ReactDOM.render(<App circle_data={CIRCLE_DATA}/>,document.getElementById('app'));
