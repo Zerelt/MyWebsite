@@ -17,11 +17,14 @@ class C_c extends Component {
 
           <div className={this.props.asd.titleClassName_Work}>
             <h1><span className='span-container'><span className='span-text'>WORK</span></span></h1>
-            <p>Have a look at the projects below, click the Live button if you'd like to see the app.
-              Note: this site was made with react, hand made Js scrollspy and scroll based animations, sass, webpack 2,
-              svg animations, Illustrator and a bit of Photoshop. You can view the source code
-              <a href='https://github.com/Zerelt/MyWebsite_Nov_2017' target='_blank'> here</a>, and all my projects
-              are on <a href='https://www.github.com/zerelt' target='_blank'>Github</a> as well.</p>
+            <p>To make this website an array of modern frontend developing tools have been used such as javascript, react, 
+              handmade javascript scrollspy and scroll based animations, sass, webpack, svg animations, 
+              Illustrator and a bit of Photoshop. You can view the source code 
+              <a href='https://github.com/Zerelt/MyWebsite' target='_blank'> here</a>. Below you'll find 
+              projects made with different and similar tools, so you can rest assured that I do have experience with 
+              all the tech that was mentioned earlier.
+              All my projects are also available for review on <a href='https://www.github.com/zerelt' target='_blank'>Github</a>.
+            </p>
           </div>
 
           <div className='project-row'>
@@ -43,7 +46,7 @@ class C_c extends Component {
                 <img src={require('../images/mockups/pomodoro-left.png')} onLoad={this.props.checkLargeImages}/>
               </div>
               <div className='project-description'>
-                <p className='project-description-text'>Javascript Pomodoro timer with different audio and visual notifications when the Session and Break periods end.</p>
+                <p className='project-description-text'>Javascript Pomodoro timer with clean UI, different audio & visual notifications and micro animations for each session and user interaction.</p>
                 <ul>
                   <li><img src={require('../images/logos/jquery-logo.svg')}/></li>
                   <li><img className='css3-logo' src={require('../images/logos/css3-logo.svg')}/></li>
@@ -183,14 +186,15 @@ class C_c extends Component {
             <div className='project'>
               <div className='project-image'>
                 <p>TwitchTV App</p>
-                <img src={require('../images/mockups/twitch-left.png')} onLoad={this.props.checkLargeImages}/>
+                <img src={require('../images/mockups/weather-left.png')} onLoad={this.props.checkLargeImages}/>
               </div>
               <div className='project-description'>
-                <p className='project-description-text'>App showing which of the pre-loaded streamers are online, with information about the stream and link to the live channel</p>
+              <p className='project-description-text'>App that displays weather information from your current location. Type in another city to view that place's current weather information.</p>
                 <ul>
-                  <li><img src={require('../images/logos/jquery-logo.svg')}/></li>
+                <li><img src={require('../images/logos/jquery-logo.svg')}/></li>
                   <li><img className='css3-logo' src={require('../images/logos/css3-logo.svg')}/></li>
                   <li><img src={require('../images/logos/json-logo.svg')}/></li>
+                  <li><img src={require('../images/logos/gmaps-logo.svg')}/></li>
                   <li><img className='gulp-logo' src={require('../images/logos/gulp-logo.svg')}/></li>
                 </ul>
                 <div className='go-live'>
@@ -219,15 +223,14 @@ class C_c extends Component {
             <div className='project'>
               <div className='project-image'>
                 <p>Weather App</p>
-                <img src={require('../images/mockups/weather-right.png')} onLoad={this.props.checkLargeImages}/>
+                <img src={require('../images/mockups/twitch-right.png')} onLoad={this.props.checkLargeImages}/>
               </div>
               <div className='project-description'>
-                <p className='project-description-text'>App that displays weather information from your current location. Type in another city to view that place's current weather information.</p>
+              <p className='project-description-text'>App showing which of the pre-loaded streamers are online, with information about the stream and link to the live channel</p>
                 <ul>
                   <li><img src={require('../images/logos/jquery-logo.svg')}/></li>
                   <li><img className='css3-logo' src={require('../images/logos/css3-logo.svg')}/></li>
                   <li><img src={require('../images/logos/json-logo.svg')}/></li>
-                  <li><img src={require('../images/logos/gmaps-logo.svg')}/></li>
                   <li><img className='gulp-logo' src={require('../images/logos/gulp-logo.svg')}/></li>
                 </ul>
                 <div className='go-live'>
