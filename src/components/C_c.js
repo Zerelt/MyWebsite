@@ -200,7 +200,7 @@ class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://twitchtv.alexandercoding.com' target='_blank'></a>
+                  <a href='https://weather.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -236,7 +236,7 @@ class C_c extends Component {
                 <div className='go-live'>
                   <span className='go-live-corner'></span>
                   <span className='go-live-circle'></span>
-                  <a href='https://weather.alexandercoding.com' target='_blank'></a>
+                  <a href='https://twitchtv.alexandercoding.com' target='_blank'></a>
                   <p>Live</p>
                 </div>
               </div>
@@ -404,11 +404,13 @@ class C_c extends Component {
           <div className={this.props.asd.titleClassName_Contacts}>
             <h1><span className='span-container'><span className='span-text'>CONTACT</span></span></h1>
             <p>
-              If you want to talk about a project, long-term collaboration
-              or simply want to say "Hi" feel free to use the contact form or social media links
-              below. Looking forward to your message.
+              Having reached this far you probably got an idea of what I can do, but just like resumes aren't a 
+              perfect description of what someone is capable of right now, nor of their potential so is a landing page 
+              that works on all major modern browsers with lots of elements and animations present in almost every web project. 
+              So if you're a bit intrigued, you want to know more about me and if you want to talk about a project, long-term collaboration, 
+              full-time work or simply want to say "Hi" feel free to use the contact form below or social media links to start a conversation.
               <br/>
-              <span className='ending'>Thanks for stopping by, have a nice day !</span>
+              <span className='ending'>Looking forward to your message.</span>
             </p>
           </div>
         </div>
