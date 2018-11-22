@@ -185,7 +185,7 @@ class C_c extends Component {
             colorCenter={this.props.circle_data[4].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
-                <p>TwitchTV App</p>
+                <p>Weather App</p>
                 <img src={require('../images/mockups/weather-left.png')} onLoad={this.props.checkLargeImages}/>
               </div>
               <div className='project-description'>
@@ -222,7 +222,7 @@ class C_c extends Component {
             colorCenter={this.props.circle_data[5].colorCenter}/>
             <div className='project'>
               <div className='project-image'>
-                <p>Weather App</p>
+                <p>TwitchTV App</p>
                 <img src={require('../images/mockups/twitch-right.png')} onLoad={this.props.checkLargeImages}/>
               </div>
               <div className='project-description'>
