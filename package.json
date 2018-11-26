@@ -27,7 +27,7 @@
     "node-sass": "^4.9.3",
     "react": "^16.4.2",
     "react-cursor-position": "^2.5.0",
-    "react-custom-scrollbars": "^4.2.1",
+    "react-custom-scrollbars-cbx": "^4.2.2",
     "react-dom": "^16.4.2",
     "react-hot-loader": "^4.3.4",
     "rimraf": "^2.6.2",

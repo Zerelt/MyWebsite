@@ -1,7 +1,7 @@
 import React , {Component} from 'react';
 import ReactDOM from 'react-dom';
 import '../style/style.scss';
-import {Scrollbars} from 'react-custom-scrollbars';
+import {Scrollbars} from 'react-custom-scrollbars-cbx';
 import {polyfill} from 'smoothscroll-polyfill';
 import debounce from '../../node_modules/lodash.debounce/index.js';
 
